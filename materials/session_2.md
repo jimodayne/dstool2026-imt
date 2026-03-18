@@ -332,7 +332,7 @@ git clone https://github.com/your_username/your_project.git
 # Install dependencies from the project lock file
 uv sync --dev
 
-# Launch Jupyter
+# Launch Jupyter / Open with VS Code
 uv run jupyter notebook
 ```
 
