@@ -1,6 +1,6 @@
 # SESSION 2 — Python Environments, Libraries & UV
 
-**Goal:** Understand Python environment isolation, dependency management, and the modern UV toolchain.
+**Goal:** Understand Python environment isolation, dependency management, and the modern `uv` toolchain.
 
 ---
 
@@ -117,7 +117,7 @@ pip install -r requirements.txt
 certifi==2026.2.25
 charset-normalizer==3.4.6
 idna==3.11
-requests==2.32.5.    ← the one you actually care about
+requests==2.32.5     ← the one you actually care about
 urllib3==2.6.3
 ```
 
@@ -297,6 +297,8 @@ For production applications, regular Python modules and scripts are usually bett
 
 ### How to set it up with UV
 
+#### Open a Jupyter Notebook in your browser
+
 Inside your project:
 
 ```bash
@@ -309,17 +311,24 @@ uv run jupyter notebook
 
 This opens Jupyter in your browser and uses the project's virtual environment.
 
-If you want this environment to appear as a named kernel in Jupyter:
+Then open a notebook file such as `sales_todo.ipynb` and select the correct kernel.
+
+#### Use a Jupyter Notebook with VS Code
+
+Another option is to open notebooks with VS Code. In that case, you do not need to install `jupyter`; you only need to add `ipykernel` as a development dependency:
 
 ```bash
-uv run python -m ipykernel install --user --name my-project --display-name "Python (my-project)"
+uv add --dev ipykernel
 ```
 
-Then create a notebook file such as `analysis.ipynb` and select the correct kernel.
+When prompted to select a kernel, choose `Python Environments` and select the virtual environment you created earlier, for example `.venv/bin/python` on macOS and Linux, or `.venv\Scripts\python` on Windows.
 
 ### Typical workflow
 
 ```bash
+# Clone the project
+git clone https://github.com/your_username/your_project.git
+
 # Install dependencies from the project lock file
 uv sync --dev
 
