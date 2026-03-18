@@ -1,17 +1,17 @@
-# Modern Python Development — 5-Hour Teaching Course
+# Tools for Data Science - Basic Development Tools
 
-> **Audience:** Students new to modern Python tooling and collaborative workflows  
+> **Audience:** Students new to modern Python and collaborative workflows  
 > **Duration:** 3 sessions
 
 ---
 
 ## Schedule Overview
 
-| Session | Topic                               | Duration | Material                                        |
-| ------- | ----------------------------------- | -------- | ----------------------------------------------- |
-| 1       | IDE, Extensions & AI Agents         | 1h 30min | [session_1.md](session_1.md) (Need Review)      |
-| 2       | Python Environments, Libraries & UV | 2h 00min | [session_2.md](session_2.md) (Need Review)      |
-| 3       | Project Collaboration with GitLab   | 1h 30min | [session_3.md](session_3.md) (Work in Progress) |
+| Session | Topic                               | Duration | Material                                                  |
+| ------- | ----------------------------------- | -------- | --------------------------------------------------------- |
+| 1       | IDE, Extensions & AI Agents         | 1h 30min | [session_1.md](materials/session_1.md) (Needs Review)     |
+| 2       | Python Environments, Libraries & UV | 2h 00min | [session_2.md](materials/session_2.md) (Needs Review)     |
+| 3       | Project Collaboration with GitLab   | 1h 30min | [session_3.md](materials/session_3.md) (Work in Progress) |
 
 ---
 
@@ -22,7 +22,7 @@ By the end of this course, students will be able to:
 1. Set up a modern Python development environment.
 2. Use AI coding assistants responsibly to enhance productivity without sacrificing code quality.
 3. Manage Python dependencies and environments effectively with `uv`.
-4. Collaborate on Python projects using GitLab for version control, code review.
+4. Collaborate on Python projects using GitLab for version control and code review.
 
 ---
 
@@ -83,14 +83,13 @@ revert:    revert a commit
 
 # Appendix B — Recommended Reading
 
-| Topic                              | Resource                                                    |
-| ---------------------------------- | ----------------------------------------------------------- |
-| UV documentation                   | https://docs.astral.sh/uv                                   |
-| Ruff documentation                 | https://docs.astral.sh/ruff                                 |
-| Conventional Commits               | https://www.conventionalcommits.org                         |
-| GitLab CI/CD docs                  | https://docs.gitlab.com/ee/ci                               |
-| Python Packaging User Guide        | https://packaging.python.org                                |
-| Real Python — Virtual Environments | https://realpython.com/python-virtual-environments-a-primer |
+| Topic                | Resource                            |
+| -------------------- | ----------------------------------- |
+| UV documentation     | https://docs.astral.sh/uv           |
+| Conventional Commits | https://www.conventionalcommits.org |
+| GitLab CI/CD docs    | https://docs.gitlab.com/ee/ci       |
+| Pandas documentation | https://pandas.pydata.org/docs/     |
+| Numpy documentation  | https://numpy.org/doc/stable/       |
 
 ---
 
